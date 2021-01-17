@@ -1,8 +1,7 @@
 #Sandbox.py
 import alpaca_trade_api as tradeapi
+import config
 
-api_key_id = input("ENTER YOUR API KEY ID: ")
-secret_key = input("ENTER YOUR SECRET ID:  ")
-api            = tradeapi.REST(api_key_id, secret_key, 'https://paper-api.alpaca.markets', api_version='v2')
+api = tradeapi.REST(config.alpaca.api_key, config.alpaca.secret_key, config.alpaca.paper_trade_url, api_version=config.alpaca.paper_trade_api_version)
 
 y=api.polygon.all_tickers()
