@@ -1,5 +1,5 @@
 #Config files
-alpaca.py
+config/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
