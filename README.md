@@ -16,7 +16,7 @@ There are three overarching sections to the project
 2. API Wrappers
 3. Trading Algorithms
 
-![Encapsulation Abstractions for the trading system as a whole](http://https://github.com/matt7045/BlueHouseHackathon/abstractions.PNG)
+![Encapsulation Abstractions for the trading system as a whole](https://raw.githubusercontent.com/matt7045/BlueHouseHackathon/main/abstractions.PNG)
 
 By strictly encapsulating the project's sections into these three categories, one will have the ability to use any trading algorithm, on any brokerage, so long as a API wrapper for that brokerage exists. All API wrappers must implement a "common set" of functions, that all trading algorithms know to use.
 
