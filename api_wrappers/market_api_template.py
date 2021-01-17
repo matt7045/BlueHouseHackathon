@@ -80,31 +80,32 @@ class Account:
 #   place   order
 #   replace orders
 #   cancel  orders
-class MarketApi:
+"""
+class MarketApi():
     def __init__(self, api_key = 0, api_secret = 0):
         self.api_key    = api_key
         self.api_secret = api_secret
     #Define the function used to populate an "account" object
     def fetchAccountInfo(self):
-        pass
+        raise NotImplementedError
     #Define the function used to populate a list of "quotes"
     def fetchQuotes(self, symbols=[]):
-        pass
+        raise NotImplementedError
     #Define the function used to fetch the OPEN orders
     def fetchOrders(self):
-        pass
+        raise NotImplementedError
     #Define the function used to fetch current positions
     def fetchPositions(self):
-        pass
+        raise NotImplementedError
     #Define the function used to fetch the market hours.
     def fetchMarketHours(self):
-        pass
+        raise NotImplementedError
     #Define the function used to place an order
     def placeOrder(self, order):
-        pass
+        raise NotImplementedError
     #Define the function used to replace an order
     def replaceOrder(self, order):
-        pass
+        raise NotImplementedError
     #Define the function used to cancel an order
     def cancelOrder(self, order):
-        pass
+        raise NotImplementedError
