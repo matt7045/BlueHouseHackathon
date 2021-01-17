@@ -1,6 +1,6 @@
-paper_trade_url = 'https://paper-api.alpaca.markets'
-paper_trade_api_version = 'v2'
+PAPER_TRADE_URL = 'https://paper-api.alpaca.markets'
+PAPER_TRADE_API_VERSION = 'v2'
 
 # Fill in your Alpaca API credentials
-api_key = ''
-secret_key = ''
+API_KEY = ''
+SECRET_KEY = ''
