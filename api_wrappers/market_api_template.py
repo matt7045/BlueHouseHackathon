@@ -44,10 +44,10 @@ class Position:
 #   askSize
 class Quote:
     def __init__(self,
-                 symbol    = ''
-                 bid_price = 0
-                 bid_size  = 0
-                 ask_price = 0
+                 symbol    = '',
+                 bid_price = 0,
+                 bid_size  = 0,
+                 ask_price = 0,
                  ask_size  = 0):
         self.symbol    = symbol
         self.bid_price = bid_price
@@ -80,8 +80,7 @@ class Account:
 #   place   order
 #   replace orders
 #   cancel  orders
-"""
-class MarketApi():
+class MarketApiTemplate():
     def __init__(self, api_key = 0, api_secret = 0):
         self.api_key    = api_key
         self.api_secret = api_secret

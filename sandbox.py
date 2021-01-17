@@ -1,7 +1,7 @@
 #Sandbox.py
-import alpaca_trade_api as tradeapi
 import config
+import api_wrappers.alpaca_wrapper as api_wrapper
 
-api = tradeapi.REST(config.alpaca.API_KEY, config.alpaca.SECRET_KEY, config.alpaca.PAPER_TRADE_URL, api_version=config.alpaca.PAPER_TRADE_API_VERSION)
+api = api_wrapper.AlpacaWrapper(config.alpaca.API_KEY, config.alpaca.SECRET_KEY)
 
-y=api.polygon.all_tickers()
+y=api.fetchAccountInfo()
